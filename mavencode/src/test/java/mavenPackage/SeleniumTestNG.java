@@ -16,6 +16,7 @@ public class SeleniumTestNG {
     WebDriver driver = new ChromeDriver();
     driver.manage().window().maximize();
     driver.get("http://demo.automationtesting.in");
+    Thread.sleep(3000);
     driver.findElement(By.id("email")).sendKeys("abcd@gamil.com");
     driver.findElement(By.id("enterimg")).click();
     Thread.sleep(3000);
